@@ -9,7 +9,7 @@ export const uploadCtrl = (result) => {
 
     var config = {
       method: 'post',
-      url: 'http://14.225.205.2/code',
+      url: 'http://localhost:5000/code',
       headers: { 
         'Authorization': localStorage.getItem('token'), 
         'Content-Type': 'application/json'

@@ -32,7 +32,7 @@ export const addPoint = (getUser, getPromo, getCode) => {
       redirect: 'follow'
     };
     
-    fetch("http://14.225.205.2/addpoint/" + site, requestOptions)
+    fetch("http://localhost:5000/addpoint/" + site, requestOptions)
       .then(response => response.json())
       .then(result => {
         document.getElementsByClassName('loader')[0].style.zIndex='-1'

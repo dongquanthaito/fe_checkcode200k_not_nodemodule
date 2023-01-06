@@ -27,7 +27,7 @@ const registerCtrl = (user, pw, getRole, getSite) => {
       redirect: 'follow'
     };
     
-    fetch("http://14.225.205.2/account/register", requestOptions)
+    fetch("http://localhost:5000/account/register", requestOptions)
       .then(response => response.json())
       .then(result => {
         if(result.name == "TokenExpiredError"){

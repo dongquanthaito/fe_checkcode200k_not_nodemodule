@@ -14,7 +14,7 @@ export const findSiteCode = (code) => {
   console.log("site: " + site)
   console.log("code_string " + code_string)
   
-  fetch("http://14.225.205.2/code?site="+ site +"&code_string=" + code_string, requestOptions)
+  fetch("http://localhost:5000/code?site="+ site +"&code_string=" + code_string, requestOptions)
     .then(response => response.json())
     .then(result => {
       console.log(result)

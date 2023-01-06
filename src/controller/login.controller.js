@@ -19,7 +19,7 @@ export const loginCtrl = (userId, pwId) => {
       redirect: 'follow'
     };
     
-    fetch("http://14.225.205.2/account/login", requestOptions)
+    fetch("http://localhost:5000/account/login", requestOptions)
       .then(response => response.json())
       .then(result => {
         if(result.code == 404) {

@@ -19,7 +19,7 @@ export const removeUserCtrl = (user) => {
       redirect: 'follow'
     };
     
-    fetch("http://14.225.205.2/account", requestOptions)
+    fetch("http://localhost:5000/account", requestOptions)
       .then(response => response.json())
       .then(result => {
         if(result.deletedCount != 0) {

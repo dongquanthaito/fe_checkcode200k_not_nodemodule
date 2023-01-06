@@ -7,7 +7,7 @@ export const checkAuthLogin = () => {
     redirect: 'follow'
   };
   
-  fetch("http://14.225.205.2/auth", requestOptions)
+  fetch("http://localhost:5000/auth", requestOptions)
     .then(response => response.json())
     .then(result => {
       console.log(result)
@@ -27,7 +27,7 @@ export const checkAuthRegis = () => {
     redirect: 'follow'
   };
   
-  fetch("http://14.225.205.2/auth", requestOptions)
+  fetch("http://localhost:5000/auth", requestOptions)
     .then(response => response.json())
     .then(result => {
       console.log(result)

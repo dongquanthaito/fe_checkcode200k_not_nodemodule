@@ -23,7 +23,7 @@ export const updateUsed = (code, user) => {
       redirect: 'follow'
     };
     
-    fetch("http://14.225.205.2/code", requestOptions)
+    fetch("http://localhost:5000/code", requestOptions)
       .then(response => response.json())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
